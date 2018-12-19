@@ -4,7 +4,7 @@ A URL Shortening Service built with Java Spring Boot, it uses Redis as an in-mem
 
 ## POST REQUEST
 
-    POST /api/url
+    POST /api/urlRequest
     
 ### Description
 Shorten a long URL 
@@ -15,18 +15,18 @@ Shorten a long URL
 ### RequestBody
 
     {
-	"longUrl":"https://mvnrepository.com/artifact/com.google.guava/guava/27.0.1-jre"
+	"urlRequest":"https://mvnrepository.com/artifact/com.google.guava/guava/27.0.1-jre"
     }
 
 ### Response
     {
-    "longUrl": "https://mvnrepository.com/artifact/com.google.guava/guava/27.0.1-jre",
+    "urlRequest": "https://mvnrepository.com/artifact/com.google.guava/guava/27.0.1-jre",
     "shortUrl": "http://localhost:8080/5dc4551d"
     }
     
 ## GET REQUEST
  
-    GET /api/{url}
+    GET /api/{urlRequest}
 
 
 ### Redirect to Original URL
